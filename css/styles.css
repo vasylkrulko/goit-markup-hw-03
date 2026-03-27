@@ -6,6 +6,16 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul,
 ol {
   list-style: none;
@@ -14,6 +24,11 @@ ol {
 a {
   text-decoration: none;
   color: inherit;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* LOGO */
@@ -28,6 +43,10 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -36,7 +55,35 @@ a {
   color: #f4f4fd;
 }
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* NAV */
+
+.section {
+  padding: 120px 0;
+}
 
 .nav-link {
   font-weight: 500;
@@ -74,9 +121,12 @@ a {
 .hero {
   background-color: #2e2f42;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
+  max-width: 496px;
+  margin: 0 auto;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -108,6 +158,15 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+.features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-item-title {
@@ -138,10 +197,17 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-item-title {
@@ -169,7 +235,19 @@ a {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 72px;
   color: #2e2f42;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .portfolio-item-title {
@@ -185,6 +263,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* FOOTER */
