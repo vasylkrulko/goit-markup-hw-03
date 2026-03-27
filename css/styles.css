@@ -159,6 +159,7 @@ img {
 }
 
 .hero-button {
+  border-radius: 4px;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -211,12 +212,13 @@ img {
 }
 
 .team-item {
+  border-radius: 0 0 4px 4px;
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
 }
 
 .team-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
